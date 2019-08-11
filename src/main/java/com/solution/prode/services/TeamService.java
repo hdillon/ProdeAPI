@@ -13,7 +13,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class TeamService {
 	
-	@Autowired
+    @Autowired
     private TeamRepository teamRepository;
 
     public List<Team> findAll() {

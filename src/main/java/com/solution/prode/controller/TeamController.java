@@ -23,11 +23,11 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/team")
+@RequestMapping("/api/private/v1/team")
 public class TeamController {
 	
-	@Autowired
-	private TeamService teamService;
+    @Autowired
+    private TeamService teamService;
 
     @GetMapping
     public ResponseEntity<List<Team>> findAll() {
