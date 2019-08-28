@@ -20,6 +20,14 @@ public class Team {
 	@NaturalId
 	@Column(name="name")
 	private String name;
+	
+	public Team() {
+		
+	}
+	
+	public Team(String name) {
+		this.name = name;
+	}
 
 	public Long getId() {
 		return id;
